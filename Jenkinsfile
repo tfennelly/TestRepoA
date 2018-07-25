@@ -1,7 +1,15 @@
 #!groovy
 
 node {
-    echo "hello world"
-    sleep 3
-    echo "woke up"
+    stage ('checkout') {
+        checkout scm
+    }
+    stage ('build') {
+        echo "build"
+        sleep 2
+    }
+    stage ('test') {
+        echo "test"
+        sleep 3
+    }
 }
