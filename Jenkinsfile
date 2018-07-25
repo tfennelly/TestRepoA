@@ -1,6 +1,6 @@
 #!groovy
 
 node {
-    echo "hello"
+    echo "hello world"
     sleep 5
 }
